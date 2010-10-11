@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>frames</key>
+	<dict>
+		<key>010306life021-trans.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{0, 0}, {62, 70}}</string>
+			<key>offset</key>
+			<string>{1, 1}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{20, 14}, {62, 70}}</string>
+			<key>sourceSize</key>
+			<string>{100, 100}</string>
+		</dict>
+		<key>010306life022-trans.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{124, 0}, {62, 70}}</string>
+			<key>offset</key>
+			<string>{1, 1}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{20, 14}, {62, 70}}</string>
+			<key>sourceSize</key>
+			<string>{100, 100}</string>
+		</dict>
+		<key>010306life023-trans.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{248, 0}, {62, 70}}</string>
+			<key>offset</key>
+			<string>{1, 1}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{20, 14}, {62, 70}}</string>
+			<key>sourceSize</key>
+			<string>{100, 100}</string>
+		</dict>
+		<key>010306life024-trans.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{186, 0}, {62, 70}}</string>
+			<key>offset</key>
+			<string>{1, 1}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{20, 14}, {62, 70}}</string>
+			<key>sourceSize</key>
+			<string>{100, 100}</string>
+		</dict>
+		<key>010306life025-trans.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{62, 0}, {62, 70}}</string>
+			<key>offset</key>
+			<string>{1, 1}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{20, 14}, {62, 70}}</string>
+			<key>sourceSize</key>
+			<string>{100, 100}</string>
+		</dict>
+		<key>010306life026-trans.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{310, 0}, {62, 70}}</string>
+			<key>offset</key>
+			<string>{1, 1}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{20, 14}, {62, 70}}</string>
+			<key>sourceSize</key>
+			<string>{100, 100}</string>
+		</dict>
+		<key>shuriken_0_h.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{0, 70}, {128, 44}}</string>
+			<key>offset</key>
+			<string>{0, 1}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 1}, {128, 44}}</string>
+			<key>sourceSize</key>
+			<string>{128, 48}</string>
+		</dict>
+		<key>shuriken_120_h.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{128, 70}, {98, 44}}</string>
+			<key>offset</key>
+			<string>{1, -1}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{16, 3}, {98, 44}}</string>
+			<key>sourceSize</key>
+			<string>{128, 48}</string>
+		</dict>
+		<key>shuriken_240_h.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{372, 0}, {114, 48}}</string>
+			<key>offset</key>
+			<string>{-1, -0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{6, 0}, {114, 48}}</string>
+			<key>sourceSize</key>
+			<string>{128, 48}</string>
+		</dict>
+	</dict>
+	<key>metadata</key>
+	<dict>
+		<key>format</key>
+		<integer>1</integer>
+		<key>size</key>
+		<string>{512, 512}</string>
+	</dict>
+</dict>
+</plist>
