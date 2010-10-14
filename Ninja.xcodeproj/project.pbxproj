@@ -230,6 +230,7 @@
 		C10CFAF11255B53400DC1501 /* player_ss.png in Resources */ = {isa = PBXBuildFile; fileRef = C10CFAF01255B53400DC1501 /* player_ss.png */; };
 		C10CFB4B1255BC7600DC1501 /* babel_s.png in Resources */ = {isa = PBXBuildFile; fileRef = C10CFB4A1255BC7600DC1501 /* babel_s.png */; };
 		C10CFB7D1255C20500DC1501 /* NJSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = C10CFB7C1255C20500DC1501 /* NJSpace.m */; };
+		C144680F1266DBD3001C0709 /* CocosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C144680E1266DBD3001C0709 /* CocosViewController.m */; };
 		C156EAF5125AAA35003B6C1A /* LevelUpScene.m in Sources */ = {isa = PBXBuildFile; fileRef = C156EAF4125AAA35003B6C1A /* LevelUpScene.m */; };
 		C156EB74125ABE28003B6C1A /* ninja_battle_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = C156EB73125ABE28003B6C1A /* ninja_battle_bg.png */; };
 		C156EB78125ABEB7003B6C1A /* ninja_battle_bg_half.png in Resources */ = {isa = PBXBuildFile; fileRef = C156EB77125ABEB7003B6C1A /* ninja_battle_bg_half.png */; };
@@ -499,6 +500,8 @@
 		C10CFB4A1255BC7600DC1501 /* babel_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = babel_s.png; sourceTree = "<group>"; };
 		C10CFB7B1255C20500DC1501 /* NJSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NJSpace.h; sourceTree = "<group>"; };
 		C10CFB7C1255C20500DC1501 /* NJSpace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NJSpace.m; sourceTree = "<group>"; };
+		C144680D1266DBD3001C0709 /* CocosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocosViewController.h; sourceTree = "<group>"; };
+		C144680E1266DBD3001C0709 /* CocosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocosViewController.m; sourceTree = "<group>"; };
 		C156EAF3125AAA35003B6C1A /* LevelUpScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelUpScene.h; sourceTree = "<group>"; };
 		C156EAF4125AAA35003B6C1A /* LevelUpScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelUpScene.m; sourceTree = "<group>"; };
 		C156EB73125ABE28003B6C1A /* ninja_battle_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ninja_battle_bg.png; sourceTree = "<group>"; };
@@ -627,6 +630,8 @@
 				1F3B9A2B0EF2145700286867 /* NJAppDelegate.m */,
 				C10CF99612545AAF00DC1501 /* Mission */,
 				C10CF994125457EE00DC1501 /* Battle */,
+				C144680D1266DBD3001C0709 /* CocosViewController.h */,
+				C144680E1266DBD3001C0709 /* CocosViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -1238,6 +1243,7 @@
 				C10CFB7D1255C20500DC1501 /* NJSpace.m in Sources */,
 				DB324E85125A128F00804090 /* NJBoardLayer.m in Sources */,
 				C156EAF5125AAA35003B6C1A /* LevelUpScene.m in Sources */,
+				C144680F1266DBD3001C0709 /* CocosViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
