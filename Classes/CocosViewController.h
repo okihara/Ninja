@@ -10,10 +10,12 @@
 
 
 @interface CocosViewController : UIViewController {
-
+	id delegate;
 }
 
 - (void)runSceneBattle;
 - (void)runSceneMission;
+
+@property (assign) id delegate;
 
 @end

@@ -1,4 +1,4 @@
-    //
+//
 //  CocosViewController.m
 //  Ninja
 //
@@ -13,19 +13,29 @@
 
 @implementation CocosViewController
 
+@synthesize delegate;
+
 - (void)runSceneBattle
 {
-	[[CCDirector sharedDirector] runWithScene:[BattleScene scene]];
+	[[CCDirector sharedDirector] replaceScene:[BattleScene scene]];
 }
 
 - (void)runSceneMission
 {
-	[[CCDirector sharedDirector] runWithScene:[NJMissionScene scene]];
+	[[CCDirector sharedDirector] replaceScene:[NJMissionScene scene]];
 }
 
 // Implement loadView to create a view hierarchy programmatically, without using a nib.
-- (void)loadView {
-	NSLog(@"%s", __FUNCTION__);
+//- (void)loadView {
+//
+//}
+
+
+// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
+- (void)viewDidLoad {
+    [super viewDidLoad];
+ 	NSLog(@"%s", __FUNCTION__);
+
 	CGRect frame = [[UIScreen mainScreen] bounds];
 	if( ! [CCDirector setDirectorType:kCCDirectorTypeDisplayLink] )								
 		[CCDirector setDirectorType:kCCDirectorTypeNSTimer];									
@@ -61,13 +71,8 @@
 	[[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"untitled.plist"];
 	
 	self.view = __glView;
-}
-
-
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad {
-    [super viewDidLoad];
- 	NSLog(@"%s", __FUNCTION__);
+	
+	[director runWithScene:[CCScene node]];
 }
 
 /*

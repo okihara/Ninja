@@ -17,13 +17,18 @@
 - (void) applicationDidFinishLaunching:(UIApplication*)application
 {
 	window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-	CocosViewController *viewController = [[CocosViewController alloc] init];	
+	CocosViewController *viewController = [[CocosViewController alloc] init];
+	viewController.delegate = self;
 	[window addSubview:viewController.view];																
 	[window makeKeyAndVisible];	
 	
 	[viewController runSceneBattle];
 }
 
+- (void)exitCocos
+{
+	NSLog(@"%s", __FUNCTION__);
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
 	[[CCDirector sharedDirector] pause];
