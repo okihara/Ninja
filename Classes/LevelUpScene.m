@@ -7,7 +7,7 @@
 //
 
 #import "LevelUpScene.h"
-
+#import "NJCommon.h"
 
 @implementation LevelUpScene
 
@@ -28,7 +28,7 @@
 	if( (self=[super init] )) {
 		self.isTouchEnabled = YES;
 		
-		CCLabel *levelupLabel = [CCLabel labelWithString:@"LEVEL UP!!" fontName:@"Verdana" fontSize:48];
+		CCLabel *levelupLabel = [CCLabel labelWithString:@"LEVEL UP!!" fontName:DEFAULT_FONT_NAME fontSize:48];
 		levelupLabel.position = ccp(240, 160);
 		[self addChild:levelupLabel];
 	}

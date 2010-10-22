@@ -7,7 +7,8 @@
 //
 
 // Import the interfaces
-#import "BattleScene.h"
+#import "NJBattleScene.h"
+#import "NJCommon.h"
 #import "LocusLayer.h"
 #import "EnemyLayer.h"
 #import "EffectLayer.h"
@@ -15,7 +16,7 @@
 #import "Enemy.h"
 #import "Shuriken.h"
 
-#import "ResultScene.h"
+#import "NJBattleResultScene.h"
 
 enum BATTILE_SCENE_STATE {
 	BATTLE_SCENE_STATE_MAIN,
@@ -23,12 +24,12 @@ enum BATTILE_SCENE_STATE {
 	BATTLE_SCENE_STATE_LOSE
 };
 
-@implementation BattleScene
+@implementation NJBattleScene
 
 + (id)scene
 {
 	CCScene *scene = [CCScene node];
-	[scene addChild:[BattleScene node]];
+	[scene addChild:[NJBattleScene node]];
 	return scene;
 }
 
@@ -72,15 +73,24 @@ enum BATTILE_SCENE_STATE {
 	return self;
 }
 
+- (void)onExit
+{
+	NSLog(@"%s", __FUNCTION__);
+	
+	[super onExit];
+
+	[[NSNotificationCenter defaultCenter] postNotification:[NSNotification notificationWithName:@"OnFinishBattle" object:self]];
+}
+
 - (void)ccTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
 	switch (state) {
 		case BATTLE_SCENE_STATE_WIN:
-			[[CCDirector sharedDirector] replaceScene:[ResultScene node]];
+			[[CCDirector sharedDirector] replaceScene:[NJBattleResultScene node]];
 			break;
 		case BATTLE_SCENE_STATE_LOSE:
 			[[CCDirector sharedDirector] replaceScene:
-			 [CCFadeTransition transitionWithDuration:3.0f scene:[ResultScene node] withColor:ccRED]];
+			 [CCFadeTransition transitionWithDuration:3.0f scene:[NJBattleResultScene node] withColor:ccRED]];
 			break;
 		default:
 			break;
@@ -113,7 +123,7 @@ enum BATTILE_SCENE_STATE {
 	state = BATTLE_SCENE_STATE_WIN;
 	
 	// display youwin
-	CCLabel *label = [CCLabel labelWithString:@"YOU WIN!!" fontName:@"Marker Felt" fontSize:96];
+	CCLabel *label = [CCLabel labelWithString:@"YOU WIN!!" fontName:DEFAULT_FONT_NAME fontSize:96];
 	label.position = ccp(240, -160);
 	[label runAction:[CCEaseOut actionWithAction:[CCMoveTo actionWithDuration:1.0f position:ccp(240, 160)] rate:10.0f]];
 	[self addChild:label];
@@ -136,7 +146,7 @@ enum BATTILE_SCENE_STATE {
 		state = BATTLE_SCENE_STATE_LOSE;
 		
 		// display youwin
-		CCLabel *label = [CCLabel labelWithString:@"YOU LOSE!!" fontName:@"Marker Felt" fontSize:96];
+		CCLabel *label = [CCLabel labelWithString:@"YOU LOSE!!" fontName:DEFAULT_FONT_NAME fontSize:96];
 		label.position = ccp(240, -160);
 		[label runAction:[CCEaseOut actionWithAction:[CCMoveTo actionWithDuration:1.0f position:ccp(240, 160)] rate:10.0f]];
 		[self addChild:label];

@@ -22,7 +22,8 @@
 	[window addSubview:viewController.view];																
 	[window makeKeyAndVisible];	
 	
-	[viewController runSceneBattle];
+	//[viewController runSceneBattle];
+	[viewController runSceneMission];
 }
 
 - (void)exitCocos

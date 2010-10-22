@@ -7,7 +7,7 @@
 //
 
 #import "InfoLayer.h"
-#import "BattleScene.h"
+#import "NJBattleScene.h"
 
 #define GAGE_WIDTH 400
 

@@ -16,7 +16,7 @@
 
 #define NUM_ENEMY 3
 
-@interface BattleScene : CCLayer
+@interface NJBattleScene : CCLayer
 {
 	uint state;
 	

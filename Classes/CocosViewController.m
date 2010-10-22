@@ -8,8 +8,9 @@
 
 #import "CocosViewController.h"
 #import "cocos2d.h"
-#import "BattleScene.h"
+#import "NJBattlePrepareScene.h"
 #import "NJMissionScene.h"
+#import "NJBattleScene.h"
 
 @implementation CocosViewController
 
@@ -17,7 +18,8 @@
 
 - (void)runSceneBattle
 {
-	[[CCDirector sharedDirector] replaceScene:[BattleScene scene]];
+	[[CCDirector sharedDirector] replaceScene:[NJBattlePrepareScene scene]];
+	//[[CCDirector sharedDirector] replaceScene:[BattleScene scene]];
 }
 
 - (void)runSceneMission

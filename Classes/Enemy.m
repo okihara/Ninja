@@ -8,7 +8,7 @@
 
 #import "Enemy.h"
 #import "Shuriken.h"
-#import "BattleScene.h"
+#import "NJBattleScene.h"
 
 @implementation Enemy
 
